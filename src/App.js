@@ -1,10 +1,15 @@
-import './App.css';
-
+import "./App.css";
+import Routing from "./Router/index";
+import Navbar from "./Components/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <h1>hello</h1>
+      <BrowserRouter>
+        <Navbar />
+        <Routing />
+      </BrowserRouter>
     </>
   );
 }
